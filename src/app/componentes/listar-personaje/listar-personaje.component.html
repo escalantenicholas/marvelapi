@@ -1,0 +1,12 @@
+<div class="container my-5">
+    <h1>Marvel Wiki</h1>
+    <hr />
+    <input type="text" class="form-control" placeholder="Busca a tu personaje favorito..." (input)="buscar($event)">
+    <div class="row">
+        <div *ngFor="let personaje of personajes" class="col-xl-4 col-sm-6 col-xs-12 mt-5">
+            <app-card-personaje [personaje]="personaje">
+                
+            </app-card-personaje>
+        </div>
+    </div>
+</div>
